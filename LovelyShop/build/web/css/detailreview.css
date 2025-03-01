@@ -1,0 +1,107 @@
+
+    /* Centering container for the review details and table */
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 20px;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+    }
+    .giua{
+        display: flex;
+        justify-content: center;
+        align-items: center;           
+    }
+    .giua h2 {
+        font-size: 30px;
+    }
+
+    /* Style for the review detail section */
+    .review-detail {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Center text in the review detail */
+    }
+
+    .review-detail h3, 
+    .review-detail h4 {
+        margin: 0;
+        color: #333;
+    }
+
+    .review-detail p {
+        margin: 10px 0;
+        line-height: 1.5;
+        color: #555;
+    }
+
+    .review-detail p strong {
+        color: #000;
+    }
+
+    /* Style for the review table */
+    table {
+        width: 100%;
+        max-width: 400px; /* Make the table narrower */
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin-top: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    table th, 
+    table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    table th {
+        background-color: #343a40;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+        background-color: #ddd;
+    }
+
+    table td {
+        font-size: 12px;
+    }
+
+    table td form {
+        display: inline-block;
+    }
+
+    /* Style for the view button */
+    input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-size: 12px;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+

@@ -1,0 +1,221 @@
+/* Định nghĩa container cho admin page */
+.admin-container {
+    display: flex;
+    height: 100vh;
+    min-height: 100vh;  /* Đảm bảo chiều cao tối thiểu 100% */
+}
+
+/* Khung danh sách người dùng */
+.list {
+    display: flex; /* Đổi thành block thay vì flex để tránh tràn */
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    max-height: 300px; /* Chiều cao tối đa cho khung */
+    overflow-y: auto; /* Tạo thanh cuộn dọc khi nội dung dài hơn khung */
+    border: 1px solid #ccc; /* Viền để phân biệt khung */
+    padding: 5px;
+    background-color: #fff;
+    box-sizing: border-box; /* Đảm bảo padding không vượt quá kích thước khung */
+}
+
+/* Thanh công cụ bên trái */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;  /* Chiều cao tối thiểu bằng 100% chiều cao màn hình */
+    overflow-y: auto; /* Tự động hiện thanh cuộn khi nội dung vượt quá */
+    max-height: 100vh; /* Giới hạn chiều cao bằng chiều cao cửa sổ hiển thị */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    height: auto;   /* Chiều cao tự động theo nội dung */
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;   /* Màu chữ cho option */
+    background-color: #333;   /* Màu nền cho option */
+    border: 2px solid #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Khi di chuột qua option */
+.sidebar li a:hover {
+    background-color: #555;   /* Thay đổi màu nền khi hover */
+}
+
+/* Sub-options có giao diện khác */
+.sub-options {
+    display: none; /* Ẩn các sub-option ban đầu */
+    padding-left: 20px;  /* Thụt vào so với option chính */
+}
+
+.sub-options li a {
+    font-size: 14px;      /* Kích thước font nhỏ hơn */
+    color: #dddddd;       /* Màu chữ nhạt hơn */
+    background-color: #444; /* Màu nền nhạt hơn */
+    padding: 8px;         /* Điều chỉnh padding */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    height: auto;  /* Chiều cao tự động */
+}
+
+/* Khi di chuột qua sub-option */
+.sub-options li a:hover {
+    background-color: #666;   /* Màu nền thay đổi khi hover */
+}
+
+/* Khung hiển thị bên phải */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto; /* Tự động hiện thanh cuộn khi nội dung vượt quá */
+    min-height: 100vh;  /* Chiều cao tối thiểu bằng chiều cao cửa sổ trình duyệt */
+}
+
+/* Style cho từng section */
+.content-section {
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung trong mỗi section */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+    flex-direction: column;  /* Các phần tử được sắp xếp theo chiều dọc */
+    min-height: 400px;       /* Đặt chiều cao tối thiểu cho section */
+    text-align: center;      /* Căn giữa nội dung văn bản */
+}
+
+.content-section.active {
+    display: block; /* Hiển thị section được chọn */
+}
+
+
+
+/* Định dạng nút thêm người dùng */
+button {
+    background-color: #007bff; /* Màu nền cho nút */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Thay đổi màu nền khi hover vào nút */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Định dạng các input trong form */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Định dạng khung nhập liệu */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #007bff; /* Màu viền khi focus */
+    outline: none;
+}
+
+
+button.up-arrow {
+        background-color: transparent;
+    border: none;
+    font-size: 12px; /* Giảm kích thước chữ để nút nhỏ hơn */
+    cursor: pointer;
+    padding: 2px; /* Thêm chút khoảng cách xung quanh */
+    color: blue; /* Màu mặc định cho mũi tên lên */
+}
+
+button.down-arrow {    background-color: transparent;
+    border: none;
+    font-size: 12px; /* Giảm kích thước chữ để nút nhỏ hơn */
+    cursor: pointer;
+    padding: 2px; /* Thêm chút khoảng cách xung quanh */
+    color: red; /* Màu mặc định cho mũi tên xuống */
+}
+
+.stock-quantity{
+    display: flex;
+    text-align: center;
+}
+
+.logout a {
+    background-color: #f44336; /* Màu đỏ */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logout a:hover {
+    background-color: #d32f2f; /* Màu đỏ đậm khi hover */
+}
+
+.review-details {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.review-details h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.review-detail p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    margin: 10px 0;
+}
+
+.review-detail p strong {
+    color: #555;
+}
+
+.review-detail .content {
+    white-space: pre-wrap;
+    margin-left: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+.review-detail .created-date {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 20px;
+}

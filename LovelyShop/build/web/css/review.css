@@ -1,0 +1,151 @@
+/* Centering container for the form and table */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px; /* Add padding around the container */
+}
+    .giua{
+        display: flex;
+        justify-content: center;
+        align-items: center;           
+    }
+    .giua h2 {
+        font-size: 30px;
+    }
+    .center-container h2{
+        font-size: 30px;
+    }
+/* Style for the review form */
+form {
+    background-color: #ffffff; /* White background for form */
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 20px;
+    border-radius: 8px; /* Slightly larger border radius */
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: Arial, sans-serif;
+}
+
+/* Style for form labels */
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #333;
+}
+
+/* Style for input fields */
+form input[type="text"], 
+form textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* More padding */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 14px; /* Font size */
+}
+
+/* Style for the submit button */
+form input[type="submit"] {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for submit button */
+form input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Style for the review table */
+table {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width */
+    border-collapse: collapse; /* Remove spaces between cells */
+    font-family: Arial, sans-serif; /* Font */
+    margin-top: 20px; /* Space above table */
+}
+
+/* Style for table header and data */
+table th, 
+table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 10px; /* Padding */
+    text-align: left; /* Left align text */
+}
+
+/* Style for table header */
+table th {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text */
+    font-weight: bold; /* Bold text */
+}
+
+/* Style for even rows */
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+/* Hover effect for rows */
+table tr:hover {
+    background-color: #f1f1f1; /* Slightly darker gray on hover */
+}
+
+/* Style for the view button */
+td form input[type="submit"] {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 5px 10px; /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 12px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for view button */
+td form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for support section */
+.support {
+    width: 100%; /* Full width */
+    background-color: #33d286; /* Green background */
+    margin-top: 30px; /* Space above */
+    padding: 30px; /* Padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.single-support {
+    width: 20%; /* Width for each support item */
+    background-color: #fff; /* White background */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    margin: 10px; /* Margin between items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.support-icon {
+    font-size: 2.4rem; /* Icon size */
+    color: #33d286; /* Green color */
+}
+
+.support-content {
+    font-size: 1.6rem; /* Content font size */
+}
